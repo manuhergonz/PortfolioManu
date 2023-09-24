@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Kalam:wght@300;400&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(44, 82, 91);
+  background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
+}
+
+@keyframes efectoTitulo {
+  animation-name: zoomInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes efectoTitulo {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.nav-link:hover {
+  transform: scale(1.4);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 30px;
+  animation: efectoTitulo 5s ease 0s 1 alternate forwards;
+  background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
+  display: inline-block;
+  border-radius: 20px;
+  font-family: "Rock Salt", cursive;
+}
+
+.boxCenter {
+  text-align: center;
+  border-radius: 20px;
+}
+
+.titulo2,
+h2 {
+  text-align: center;
+  animation: efectoTitulo 5s ease 2s 1 alternate forwards;
+  margin: 50px;
+  color: #2eaebf;
+  font-family: "Ephesis", cursive;
+  font-family: "Kalam", cursive;
+  margin-bottom: 500px;;
+}
+
+#logo {
+  height: 150px;
+  width: 150px;
+}
+
+.navbarLetras {
+  font-family: "Ephesis", cursive;
+  font-family: "Kalam", cursive;
+}
+
+.navbarLetras:hover {
+  border-radius: 10px 30px;
+  box-shadow: 0px 0px 40px rgb(44, 82, 91);
+}
+
+.text-center {
+  justify-content: center;
+}
+
+.imgHome {
+  width: 25%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.imgHome:hover {
+  transform: scale(1.1);
+}
+
+.contenedorFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #1d1b1a58;
+  height: 200px;
+  width: 100%;
+}
+
+.logosRS {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.logosRS:hover {
+  transform: scale(1.5);
+}
+
+.itemsRedes {
+  color: rgb(205, 175, 140);
+}
+
+.contenedor {
+  text-align: center;
+  margin: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+}
+
+.datosPersonales {
+  background-color: #cdaf8c;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.experiencia-laboral {
+  background-color: rgb(205, 175, 140);
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+
+.contenedorSobreMi {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+.imgCv {
+  width: 700px;
+  height: 900px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.boxTitulo {
+  margin: 10px;
+}
+
+.containerBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contenedor-datosPersonales {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+
+.box-datosPeronales {
+  animation: efectoTitulo 5s ease 3s 1 alternate forwards;
+  color: bisque;
+  width: 400px;
+}
+
+.boton2 a {
+  text-decoration: none;
+  color: #cdaf8c;
+}
+
+.botonDescarga {
+  display: flex;
+  justify-content: center;
+}
+
+.boton2 {
+  border-radius: 15px;
+  padding: 5px;
+  background: rgb(44, 82, 91);
+  background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
+}
+
+.imgCertificado {
+  margin-bottom: 200px;
+  margin-top: 150px;
+  width: 45%;
+  border-radius: 30px;
+}
+.logoshc {
+  border-radius: 20px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.misHabilidades {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  margin: 100px;
+}
+
+.imgDescarga {
+  width: 15px;
+}
+
+.containerBoton {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
