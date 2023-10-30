@@ -9,6 +9,33 @@ body {
   background: rgb(44, 82, 91);
   background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
 }
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 
 @keyframes efectoTitulo {
   animation-name: zoomInRight;
@@ -207,34 +234,44 @@ h2 {
 .imgCertificado {
   margin-bottom: 200px;
   margin-top: 150px;
-  width: 45%;
+  width: 35%;
   border-radius: 30px;
 }
+
+.contenedorLogos{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .logoshc {
+  
   border-radius: 20px;
   padding: 10px;
   width: 200px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  
 }
 
 .misHabilidades {
-  padding: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-.box {
-  margin: 100px;
+  margin: 50px;
+  font-size: 30px;
+  width: 100%;
+  color: #2eaebf;
+  font-family: "Ephesis", cursive;
+  font-family: "Kalam", cursive;
+  text-align: center;
+  -webkit-animation: focus-in-contract 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-contract 8s ease 2s 1 alternate forwards 0.99s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  
 }
 
+
+/* Boton de descarga */
 .imgDescarga {
   width: 15px;
-}
-
-.containerBoton {
-  display: flex;
-  align-items: flex-end;
 }
 
 
