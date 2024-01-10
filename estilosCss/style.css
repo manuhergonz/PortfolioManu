@@ -38,17 +38,20 @@ body {
 
 
 @keyframes efectoTitulo {
-  animation-name: zoomInRight;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  animation-name {zoomInRight:
+
+  }
+  animation-duration 1s
+  animation-fill-mode both;
 }
+
 @keyframes efectoTitulo {
   0% {
     opacity: 0;
     transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-  60% {
+  50% {
     opacity: 1;
     transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -85,22 +88,27 @@ h2 {
   margin-bottom: 500px;;
 }
 
-#logo {
-  height: 150px;
-  width: 150px;
-}
-
-.navbarLetras {
+.navbarLetras  {
   font-family: "Ephesis", cursive;
   font-family: "Kalam", cursive;
+  display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(24, 22, 22, 0.575);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.2s;
+    transition-property: transform;
 }
 
 .navbarLetras:hover {
-  border-radius: 10px 30px;
+  border-radius: 20px 20px;
   box-shadow: 0px 0px 40px rgb(44, 82, 91);
+ 
 }
 
-.text-center {
+.containerImgHome {
+  display: flex;
   justify-content: center;
 }
 
@@ -112,9 +120,14 @@ h2 {
   -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
-.imgHome:hover {
-  transform: scale(1.1);
-}
+.imgHome:hover{
+ 
+  box-shadow: 0px 0px 15px 15px #1d92af;
+  -webkit-box-shadow: 0px 0px 15px 15px #1ee5ec;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }
+/*FOOTER */
 
 .contenedorFooter {
   display: flex;
@@ -134,107 +147,56 @@ h2 {
 }
 
 .logosRS:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+  box-shadow: 50% #1d92af;
+  -webkit-box-shadow: 0px 0px 10px 10px #1ee5ec;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  border-radius: 50%;
 }
 
 .itemsRedes {
   color: rgb(205, 175, 140);
 }
 
-.contenedor {
-  text-align: center;
-  margin: 100px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  height: 80%;
-  align-items: center;
-}
 
-.datosPersonales {
-  background-color: #cdaf8c;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
-}
+ /* Boton de descarga  */
 
-.experiencia-laboral {
-  background-color: rgb(205, 175, 140);
-  width: 30%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
-  padding: 20px;
-}
-
-.contenedorSobreMi {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  padding: 10px;
-  text-align: center;
-}
-
-.imgCv {
-  width: 700px;
-  height: 900px;
-  margin: 10px;
-  border-radius: 20px;
-}
-
-.boxTitulo {
-  margin: 10px;
-}
-
-.containerBox {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.contenedor-datosPersonales {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 10px;
-  padding: 20px;
-}
-
-.box-datosPeronales {
-  animation: efectoTitulo 5s ease 3s 1 alternate forwards;
-  color: bisque;
-  width: 400px;
-}
-
-.boton2 a {
+.botonDescarga a {
   text-decoration: none;
   color: #cdaf8c;
 }
 
-.botonDescarga {
+.botonDescarga:hover{
+ 
+  box-shadow: 0px 0px 15px 15px #1d92af;
+  -webkit-box-shadow: 0px 0px 15px 15px #1ee5ec;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }
+
+.contenedorbotonDescarga {
   display: flex;
   justify-content: center;
 }
 
-.boton2 {
+.botonDescarga {
   border-radius: 15px;
   padding: 5px;
   background: rgb(44, 82, 91);
   background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
 }
 
+
+.imgDescarga {
+  width: 15px;
+}
+
+
 .imgCertificado {
   margin-bottom: 200px;
   margin-top: 150px;
-  width: 35%;
+  width: 40%;
   border-radius: 30px;
 }
 
@@ -245,15 +207,20 @@ h2 {
 }
 
 .logoshc {
-  
   border-radius: 20px;
   padding: 10px;
   width: 200px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
-  
 }
+
+.logoshc:hover{
+  box-shadow: 0px 0px 15px 15px #1d92af;
+  -webkit-box-shadow: 0px 0px 15px 15px #1ee5ec;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }
 
 .misHabilidades {
   margin: 50px;
@@ -265,14 +232,19 @@ h2 {
   text-align: center;
   -webkit-animation: focus-in-contract 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: focus-in-contract 8s ease 2s 1 alternate forwards 0.99s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  
 }
 
-
-/* Boton de descarga */
-.imgDescarga {
-  width: 15px;
+@media (min-width: 200px) and (max-width: 500px) {
+  .imgCertificado{
+    margin: 100px;
+    width: 400px;
+    padding: 20px;
+  }
 }
 
+@media (min-width: 500px) and (max-width: 700px){
+.imgCertificado{
+  width: 500px;
+}
 
-
+}
