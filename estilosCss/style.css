@@ -290,7 +290,7 @@ h4{
 
 
 
-@media (max-width: 600px)  {
+@media screen and (max-width: 600px)  {
   .imgCertificado {
     width: 500px;
   }
