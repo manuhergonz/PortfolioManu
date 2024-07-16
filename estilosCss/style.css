@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Kalam:wght@300;400&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap");
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+
 
 body {
   background: rgb(44, 82, 91);
@@ -13,12 +14,12 @@ body {
   0% {
     letter-spacing: 1em;
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -26,18 +27,17 @@ body {
   0% {
     letter-spacing: 1em;
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 
-
-@keyframes efectoTitulo {
+/* @keyframes efectoTitulo {
   animation-name {zoomInRight:
 
   }
@@ -56,90 +56,81 @@ body {
     transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
+} */
+
+h4{
+  margin: 5px;
+  padding: 5px;
 }
 
-
-.nav-link, a{
-  -webkit-text-stroke: 1px rgb(65, 148, 187);
-  color:#141414;
-  
-
-}  
-
-.nav-link:hover,
-:focus {
-  color: #ffffff;
-  background: #1ee5ec;
-  transform: scale(1.2);
- 
+.nav-link:hover {
+  outline: solid 1px black;
+ border-radius: 10px;
 }
 
-
-.titulo {
-  text-align: center;
-  font-size: 30px;
+.titulo__h1 {
   animation: efectoTitulo 5s ease 0s 1 alternate forwards;
   background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
-  display: inline-block;
-  border-radius: 20px;
-  font-family: "Rock Salt", cursive;
+  font-size: 30px;
+  
+}
+.parrafo{
+  padding: 5px;
+  margin-top: 20px;
 }
 
+.titulo__h2 {
+  font-size: 19px;
+ 
+}
+.contenedor_informacion{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+   width: 100%;
+}
 .boxCenter {
-  text-align: center;
+  display: flex;
+  background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
+  margin: 30px;
+  max-width: 800px;
+
   border-radius: 20px;
 }
 
-.titulo2,
-h2 {
-  text-align: center;
+.item__titulo {
   animation: efectoTitulo 5s ease 2s 1 alternate forwards;
-  margin: 50px;
   color: #2eaebf;
-  font-family: "Ephesis", cursive;
-  font-family: "Kalam", cursive;
-  margin-bottom: 500px;;
+  width: 100%;
+  margin: auto;
 }
 
-.navbarLetras  {
-  font-family: "Ephesis", cursive;
-  font-family: "Kalam", cursive;
-  display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(24, 22, 22, 0.575);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.2s;
-    transition-property: transform;
+.navbarLetras {
+  transition: all 1s;
 }
 
 .navbarLetras:hover {
-  border-radius: 20px 20px;
-  box-shadow: 0px 0px 40px rgb(44, 82, 91);
- 
+  border-bottom: #1d92af solid;
 }
 
-.containerImgHome {
-  display: flex;
-  justify-content: center;
+.img__box {
+  margin-right: 20px;
+  
 }
 
 .imgHome {
-  width: 25%;
+  width: 250px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  transition: all 1s;
 }
 
-.imgHome:hover{
- 
+.imgHome:hover {
   box-shadow: 0px 0px 15px 15px #1d92af;
   -webkit-box-shadow: 0px 0px 15px 15px #1ee5ec;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  }
+}
 /*FOOTER */
 
 .contenedorFooter {
@@ -147,9 +138,10 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 20%;
   background-color: #1d1b1a58;
   height: 200px;
+  /* max-width: 900px; */
   width: 100%;
 }
 
@@ -157,14 +149,12 @@ h2 {
   width: 25px;
   height: 25px;
   margin: 10px;
+  transition: 0.4s;
 }
 
 .logosRS:hover {
-  transform: scale(1.2);
-  box-shadow: 50% #1d92af;
   -webkit-box-shadow: 0px 0px 10px 10px #1ee5ec;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
+  box-shadow: 0px 0px 10px 10px #1ee5ec;
   border-radius: 50%;
 }
 
@@ -172,29 +162,71 @@ h2 {
   color: rgb(205, 175, 140);
 }
 
+/* Boton de descarga 
 
- /* Boton de descarga  */
- .btn {
+ .btn{
+  height: 60px; width: 220px;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate( -50%, -50%);
+  display: grid; color: #fff;
+  place-content: center;
+  font-weight: 600; font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#03A9F4,#f441a5,#ffeb3b,#03A9F4);
+  background-size: 400%;
+  cursor: pointer;
+}
+.btn:hover{
+  animation: animate 8s linear infinite;
+  
+}
+ .btn:hover:before{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+ }
+
+ .btn:before{
+  content: '';
+  position: absolute;
+  top: -5px; left: -5px;
+  bottom: -5; right: -5;
+  z-index: -1;
+  background: linear-gradient(90deg,#03A9F4,#f441a5,#ffeb3b,#03A9F4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 1s;
+ } 
+  */
+
+.btn {
   padding: 10px 20px;
   text-transform: uppercase;
   border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
   color: #ffffff80;
-  text-shadow: none;
   background: transparent;
   cursor: pointer;
   box-shadow: transparent;
   border: 1px solid #ffffff80;
   transition: 0.5s ease;
   user-select: none;
+  font-family: Arial, Helvetica, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 .btn:hover,
 :focus {
   color: #ffffff;
-  background: #008cff;
-  border: 1px solid #008cff;
+  background: #09ddec;
+  outline: 1px solid #008cff;
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
   box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
     0 0 100px #008cff;
@@ -211,63 +243,36 @@ h2 {
 .imgDescarga {
   width: 15px;
 }
-/* .botonDescarga a {
-  text-decoration: none;
-  color: #cdaf8c;
-}
-
-.botonDescarga:hover{
- 
-  box-shadow: 0px 0px 15px 15px #1d92af;
-  -webkit-box-shadow: 0px 0px 15px 15px #1ee5ec;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  }
-
-.contenedorbotonDescarga {
-  display: flex;
-  justify-content: center;
-}
-
-.botonDescarga {
-  border-radius: 15px;
-  padding: 5px;
-  background: rgb(44, 82, 91);
-  background: linear-gradient(0deg, rgb(44, 82, 91) 27%, #2e2d2c 100%);
-}
-
-
- */
-
 
 .imgCertificado {
   margin-bottom: 200px;
   margin-top: 150px;
-  width: 40%;
+  width: 35%;
   border-radius: 30px;
 }
 
-.contenedorLogos{
-   display: flex;
+.contenedorLogos {
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .logoshc {
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
   width: 200px;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.75);
+  transition: all 1.5s;
 }
 
-.logoshc:hover{
+.logoshc:hover {
   box-shadow: 0px 0px 15px 15px #1d92af;
   -webkit-box-shadow: 0px 0px 15px 15px #1ee5ec;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
-  }
+}
 
 .misHabilidades {
   margin: 50px;
@@ -277,21 +282,36 @@ h2 {
   font-family: "Ephesis", cursive;
   font-family: "Kalam", cursive;
   text-align: center;
-  -webkit-animation: focus-in-contract 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: focus-in-contract 8s ease 2s 1 alternate forwards 0.99s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: focus-in-contract 10s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-contract 8s ease 2s 1 alternate forwards 0.99s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@media (min-width: 200px) and (max-width: 500px) {
-  .imgCertificado{
-    margin: 100px;
-    width: 400px;
-    padding: 20px;
+
+
+@media (max-width: 600px)  {
+  .imgCertificado {
+    width: 500px;
   }
+
+  .boxCenter{
+    display: flex;
+    width: 100%;
+  flex-wrap: wrap;
+ 
+  }
+
+  .imgHome{  
+    width: 70%;
+  }
+
+
+  .img__box{
+    display: flex;
+   justify-content: center;
+    width: 100%;
+   }
+   
 }
 
-@media (min-width: 500px) and (max-width: 700px){
-.imgCertificado{
-  width: 500px;
-}
-
-}
